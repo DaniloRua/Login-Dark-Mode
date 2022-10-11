@@ -1,16 +1,35 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:ital,wght@1,300&display=swap');
+*{  border: 1px solid red;
     margin: 0%;
+    box-sizing: border-box;
+    font-family: 'roboto', arial, helvetica, sans-serif;
+
 }
 
 .board {
-    border: 1px red solid;
     display: flex;
-    flex-direction: space-between;
-    gap: 1em;
-    text-align: right-center;
-    background-color: lightgray;
-    padding: 2%;
-    margin: 3%;
-    width: auto;
+    justify-content: space-between;
     height: 70vh;
+    margin: 2%;
+    padding: 2%;
+    gap: 2%;
+    align-items: center;
+    }
+.apresentation-box {
+    display: flex;
+    
+    justify-content: center;
+    height: 100%;
+    width: 450px;
+    
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 100%;
+    width: 450px;
+    max-width: 450px;
+    margin-block-end: 1em;
 }
