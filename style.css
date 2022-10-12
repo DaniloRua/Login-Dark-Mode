@@ -1,35 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:ital,wght@1,300&display=swap');
-*{  border: 1px solid red;
+*{  
+    
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'roboto', arial, helvetica, sans-serif;
-
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    height: 10vh;
+}
+header{
+    padding: 10px;
 }
 
+ .icon-dark {
+    height: 40px;
+    width: 40px;    
+    background-image: url(./assets/7795651_weather_day_sun_icon.png);
+    background-size: contain;
+}
 .board {
+    
     display: flex;
     justify-content: space-between;
-    height: 70vh;
+    height: 80vh;
     margin: 2%;
     padding: 2%;
     gap: 2%;
     align-items: center;
-    }
+}
+
 .apresentation-box {
+
+    border: 1px grey solid;
     display: flex;
-    
+    flex-direction: column;
+    margin: 10px;
+    padding-top: 10px ;
     justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 450px;
+    width: 500px;
+    max-width: 500px;
     
 }
 
+.apresentation-box h1{
+    font-size: 50px;
+    
+}
+
+.apresentation-box a {
+    font-size: 30px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: solid 2px;
+}
 .login-box{
+    border: 1px grey solid;
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    margin: 20px;
+    padding: 20px;
     height: 100%;
-    width: 450px;
-    max-width: 450px;
+    width: 500px;
+    max-width: 500px;
     margin-block-end: 1em;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+ input {
+    display: block;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(101, 101, 101);
+    margin: 10px 0 0 0;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 300px;
+}
+button {
+    width: 300px;
+    display: block;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(101, 101, 101);
+    margin: 10px 0 0 0;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+input:hover, button:hover{
+    background-color: lightgray;
 }
