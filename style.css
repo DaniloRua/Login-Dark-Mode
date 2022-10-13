@@ -1,33 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:ital,wght@1,300&display=swap');
-*{  
+
+* {
     margin: 0%;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
-   
 }
 
-
-header{
+header {
     height: 10vh;
-}
-header{
     padding: 10px;
 }
-
- .icon-dark {
-    height: 40px;
-    width: 40px;    
-    background-image: url(./assets/7795651_weather_day_sun_icon.png);
-    background-size: contain;
-    
-}
+  
 .board {
-    
+
     display: flex;
     background-image: url(./assets/9025617_flower_lotus_icon.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center top;
-    background-size:20%;
+    background-size: 20%;
     justify-content: space-between;
     height: 80vh;
     margin-left: 50px;
@@ -37,7 +27,9 @@ header{
     align-items: center;
 }
 
-.apresentation-box,.login-box, .apresentation-box h1 {
+.apresentation-box,
+.login-box,
+.apresentation-box h1 {
     background-color: rgba(245, 245, 245, 0);
 }
 
@@ -47,16 +39,16 @@ header{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding-top: 10px ;
+    padding-top: 10px;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 600px;
     max-width: 500px;
-    
+
 }
 
-.apresentation-box h1{
+.apresentation-box h1 {
     font-size: 50px;
     padding: 20px;
 }
@@ -67,9 +59,10 @@ header{
     background-color: rgb(24, 24, 24);
     border-radius: 5px;
     border: solid 2px;
-    
+
 }
-.login-box{
+
+.login-box {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 10px;
@@ -83,22 +76,24 @@ header{
     gap: 2em;
     max-width: 500px;
 }
-.login-box div{
+
+.login-box div {
     background-color: rgba(245, 245, 245, 0);
 }
 
 h2 {
     font-size: 40px;
 }
+
 input::placeholder {
     color: whitesmoke;
 
-  }
+}
 
- input {
+input {
     display: block;
     color: whitesmoke;
-    border-radius: 5px;   
+    border-radius: 5px;
     border: none;
     background-color: rgb(101, 101, 101);
     margin: 10px 0 0 0;
@@ -107,14 +102,18 @@ input::placeholder {
     font-size: 18px;
     width: 300px;
 }
-form, form span, form span a {
+
+form,
+form span,
+form span a {
     border-radius: 5px;
     background-color: rgba(245, 245, 245, 0);
 }
+
 button {
     width: 300px;
     display: block;
-    border:none;
+    border: none;
     color: whitesmoke;
     border-radius: 5px;
     border: none;
@@ -125,7 +124,32 @@ button {
     font-size: 18px;
 }
 
-input:hover, button:hover{
+input:hover,
+button:hover {
     background-color: lightgray;
 }
+.dark-mode {
+    height: 40px;
+    width: 40px;
+    background-image: url(./assets/7795651_weather_day_sun_icon.png);
+    background-size: contain;
 
+}
+
+.dark-on{
+animation: transform-icon;
+animation-delay: 0.2s;
+animation-duration: .7s forwards;
+
+}
+
+
+@keyframes transform-icon{
+
+    from{ background-image: url(./assets/7795651_weather_day_sun_icon.png);}
+
+    to{
+        background-image: url(/assets/211779_moon_icon.png);
+    }
+
+}
