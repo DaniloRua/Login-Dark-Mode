@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:ital,wght@1,300&display=swap');
 *{  
-    
     margin: 0%;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
-    background-color: rgb(255, 255, 255);
+   
 }
+
+
 header{
     height: 10vh;
 }
@@ -18,68 +19,86 @@ header{
     width: 40px;    
     background-image: url(./assets/7795651_weather_day_sun_icon.png);
     background-size: contain;
+    
 }
 .board {
     
     display: flex;
+    background-image: url(./assets/9025617_flower_lotus_icon.png);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-size:20%;
     justify-content: space-between;
     height: 80vh;
-    margin: 2%;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 2%;
     gap: 2%;
     align-items: center;
 }
 
-.apresentation-box {
+.apresentation-box,.login-box, .apresentation-box h1 {
+    background-color: rgba(245, 245, 245, 0);
+}
 
-    border: 1px grey solid;
+.apresentation-box {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin: 10px;
     padding-top: 10px ;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 500px;
+    width: 600px;
     max-width: 500px;
     
 }
 
 .apresentation-box h1{
     font-size: 50px;
-    
+    padding: 20px;
 }
 
 .apresentation-box a {
+    color: whitesmoke;
     font-size: 30px;
-    background-color: lightgray;
+    background-color: rgb(24, 24, 24);
     border-radius: 5px;
     border: solid 2px;
+    
 }
 .login-box{
-    border: 1px grey solid;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding: 20px;
     height: 100%;
     width: 500px;
-    max-width: 500px;
-    margin-block-end: 1em;
+    max-width: 600px;
     justify-content: center;
     align-items: center;
     gap: 2em;
     max-width: 500px;
 }
+.login-box div{
+    background-color: rgba(245, 245, 245, 0);
+}
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
+input::placeholder {
+    color: whitesmoke;
+
+  }
 
  input {
     display: block;
     color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 5px;   
     border: none;
     background-color: rgb(101, 101, 101);
     margin: 10px 0 0 0;
@@ -88,9 +107,14 @@ h2 {
     font-size: 18px;
     width: 300px;
 }
+form, form span, form span a {
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0);
+}
 button {
     width: 300px;
     display: block;
+    border:none;
     color: whitesmoke;
     border-radius: 5px;
     border: none;
@@ -104,3 +128,4 @@ button {
 input:hover, button:hover{
     background-color: lightgray;
 }
+
