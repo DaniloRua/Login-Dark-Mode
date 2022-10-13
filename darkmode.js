@@ -1,5 +1,10 @@
 function darkmode(){
  console.log("Dark mode enabled ");
- const dark = document.getElementsByid("darkmode")
- dark.classList.add("dark-on");
+ darkOn();
+}
+
+function darkOn(){
+    const dark = document.querySelector(".dark-off");
+    dark.classList.toggle("dark-on");
+
 }
