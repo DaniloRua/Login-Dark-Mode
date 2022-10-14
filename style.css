@@ -14,7 +14,8 @@ header {
 }
 
 .board {
-
+    transition: ease-in-out;
+    animation: dark-on 1s ease;
     display: flex;
     background-image: url(./assets/9025617_flower_lotus_icon.png);
     background-repeat: no-repeat;
@@ -36,6 +37,8 @@ header {
 }
 
 .apresentation-box {
+    animation: dark-on 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 10px;
@@ -65,6 +68,9 @@ header {
 }
 
 .login-box {
+
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1), 0px -8px 25px 10px rgba(150, 150, 150, 0.24);
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 10px;
@@ -93,6 +99,8 @@ input::placeholder {
 }
 
 input {
+    animation: dark-on 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     display: block;
     color: whitesmoke;
     border-radius: 5px;
@@ -136,9 +144,10 @@ button:hover {
     width: 40px;
     background-image: url(./assets/7795651_weather_day_sun_icon.png);
     background-size: contain;
-    background-color: rgba(0, 0, 0, 0.189);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    
+    padding: 20px;
+
 }
 
 .dark-on {
@@ -146,9 +155,8 @@ button:hover {
     width: 40px;
     background-image: url(./assets/211779_moon_icon.png);
     background-size: contain;
-    animation: transform 1s forwards, ease-in-out;
-    animation: dark-on 1s, delay 0.2s, forwards, ease-in-out;
-    background-color: rgba(0, 0, 0, 0.189);
+    animation: dark-on 1.5s, delay 0.2s, ease-in-out;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
 }
 
@@ -159,7 +167,6 @@ button:hover {
     height: 40px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;
@@ -200,23 +207,71 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-@keyframes transform {
+@keyframes dark-on {
 
     from {
-            opacity: 100%;
+        opacity: 0%;
     }
 
     to {
-        opacity: 0%;
+        opacity: 100%;
     }
-
-}
-@keyframes dark-on {
-    
-    from {
-        opacity: 0%;
 }
 
-to {
-    opacity: 100%;
-}}
+.body-dark {
+    background-color: #221d1d;
+
+}
+
+.board-dark {
+    animation: dark-on 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    background-image: url(./assets/9025617_flower_lotus_icon_white.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 20%;
+    justify-content: space-between;
+    height: 80vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 2%;
+    gap: 2%;
+    align-items: center;
+}
+
+.apresentation-box-dark {
+    animation: dark-on 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 600px;
+    max-width: 500px;
+
+}
+
+.login-box-dark {
+    animation: dark-on 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1), 0px -8px 25px 10px rgba(150, 150, 150, 0.24);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 500px;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    max-width: 500px;
+}
