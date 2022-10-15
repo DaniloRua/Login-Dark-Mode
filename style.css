@@ -14,6 +14,8 @@ header {
 }
 
 .board {
+    word-wrap: break-word;
+    min-width: 360px;
     transition: ease-in-out;
     animation: dark-on 1s ease;
     display: flex;
@@ -238,6 +240,7 @@ input:checked+.slider:before {
     padding: 2%;
     gap: 2%;
     align-items: center;
+    min-width: 360px;
 }
 
 .apresentation-box-dark {
