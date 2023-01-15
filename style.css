@@ -1,131 +1,373 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:ital,wght@1,300&display=swap");
 
 * {
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: 'roboto', sans-serif;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
 }
 
 header {
-    display: flex;
-    height: 10vh;
-    padding: 10px;
-    gap: 0.5em
+  display: flex;
+  height: 10vh;
+  padding: 10px;
+  gap: 0.5em;
 }
 
 .board {
-    word-wrap: break-word;
-    min-width: 360px;
-    transition: ease-in-out;
-    animation: dark-on 1s ease;
-    display: flex;
-    background-image: url(./assets/9025617_flower_lotus_icon.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 20%;
-    justify-content: space-between;
-    height: 80vh;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 2%;
-    gap: 2%;
-    align-items: center;
+  word-wrap: break-word;
+  transition: ease-in-out;
+  animation: dark-on 1s ease;
+  display: flex;
+  background-size: 15%;
+  background-image: url(./assets/9025617_flower_lotus_icon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  justify-content: space-between;
+  height: 80vh;
+  padding: 2%;
+  gap: 2%;
+  align-items: center;
 }
 
 .apresentation-box,
 .login-box,
 .apresentation-box h1 {
-    background-color: rgba(245, 245, 245, 0);
+  background-color: rgba(245, 245, 245, 0);
 }
 
 .apresentation-box {
-    animation: dark-on 1s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 600px;
-    max-width: 500px;
-
+  animation: dark-on 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 600px;
 }
 
 .apresentation-box h1 {
-    font-size: 50px;
-    padding: 20px;
+  font-size: 50px;
+  padding: 20px;
 }
 
 .apresentation-box a {
-    color: whitesmoke;
-    font-size: 30px;
-    background-color: rgb(24, 24, 24);
-    border-radius: 5px;
-    border: solid 2px;
-
+  color: whitesmoke;
+  font-size: 30px;
+  background-color: rgb(24, 24, 24);
+  border-radius: 5px;
+  border: solid 2px;
 }
 
 .login-box {
-
-    transition: all 0.5s ease-in-out;
-    box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1), 0px -8px 25px 10px rgba(150, 150, 150, 0.24);
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 500px;
-    max-width: 600px;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    max-width: 500px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1),
+    0px -8px 25px 10px rgba(150, 150, 150, 0.24);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 500px;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .login-box div {
-    background-color: rgba(245, 245, 245, 0);
+  background-color: rgba(245, 245, 245, 0);
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 input::placeholder {
-    color: whitesmoke;
-
+  color: whitesmoke;
 }
 
 input {
-    animation: dark-on 1s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    display: block;
-    color: whitesmoke;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(101, 101, 101);
-    margin: 10px 0 0 0;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 18px;
-    width: 300px;
+  animation: dark-on 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(101, 101, 101);
+  margin: 10px 0 0 0;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 300px;
 }
 
 form,
 form span,
 form span a {
-    border-radius: 5px;
-    background-color: rgba(245, 245, 245, 0);
+  border-radius: 5px;
+  background-color: rgba(245, 245, 245, 0);
 }
 
 button {
+  width: 300px;
+  display: block;
+  border: none;
+  color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(101, 101, 101);
+  margin: 10px 0 0 0;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+input:hover,
+button:hover {
+  background-color: lightgray;
+}
+
+.dark-off {
+  height: 40px;
+  width: 40px;
+  background-image: url(./assets/7795651_weather_day_sun_icon.png);
+  background-size: contain;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.dark-on {
+  height: 40px;
+  width: 40px;
+  background-image: url(./assets/211779_moon_icon.png);
+  background-size: contain;
+  animation: dark-on 1.5s, delay 0.2s, ease-in-out;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+@keyframes dark-on {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+.body-dark {
+  background-color: #221d1d;
+}
+
+.board-dark {
+  animation: dark-on 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  background-image: url(./assets/9025617_flower_lotus_icon_white.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 15%;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 2%;
+  align-items: center;
+}
+
+.apresentation-box-dark {
+  animation: dark-on 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 600px;
+  max-width: 500px;
+}
+
+.login-box-dark {
+  animation: dark-on 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1),
+    0px -8px 25px 10px rgba(150, 150, 150, 0.24);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 500px;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  max-width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 10%;
+  }
+
+  .board {
+    word-wrap: break-word;
+    transition: ease-in-out;
+    animation: dark-on 1s ease;
+    display: flex;
+    flex-direction: column;
+    background-size: 30%;
+    background-image: url(./assets/9025617_flower_lotus_icon.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 80vh;
+    margin: 1rem;
+    gap: 1rem;
+    padding-top: 10%;
+    align-items: center;
+  }
+
+  .apresentation-box,
+  .login-box,
+  .apresentation-box h1 {
+    background-color: rgba(245, 245, 245, 0);
+  }
+
+  .apresentation-box {
+    animation: dark-on 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .apresentation-box h1 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .apresentation-box a {
+    color: whitesmoke;
+    font-size: 25px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    border: solid 2px;
+  }
+
+  .login-box {
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+  }
+
+  .login-box div {
+    background-color: rgba(245, 245, 245, 0);
+}
+
+  h2 {
+    font-size: 40px;
+  }
+
+  input::placeholder {
+    color: whitesmoke;
+  }
+
+  input {
+    animation: dark-on 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: block;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(101, 101, 101);
+    margin: 10px 0 0 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 20rem;
+    height:3rem;
+  }
+
+  form,
+  form span,
+  form span a {
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0);
+  }
+
+  button {
     width: 300px;
     display: block;
-    border: none;
     color: whitesmoke;
     border-radius: 5px;
     border: none;
@@ -134,14 +376,16 @@ button {
     padding: 20px;
     text-transform: uppercase;
     font-size: 18px;
-}
+    width: 20rem;
+    height:4rem;
+  }
 
-input:hover,
-button:hover {
+  input:hover,
+  button:hover {
     background-color: lightgray;
-}
+  }
 
-.dark-off {
+  .dark-off {
     height: 40px;
     width: 40px;
     background-image: url(./assets/7795651_weather_day_sun_icon.png);
@@ -149,10 +393,9 @@ button:hover {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 20px;
+  }
 
-}
-
-.dark-on {
+  .dark-on {
     height: 40px;
     width: 40px;
     background-image: url(./assets/211779_moon_icon.png);
@@ -160,22 +403,22 @@ button:hover {
     animation: dark-on 1.5s, delay 0.2s, ease-in-out;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-}
+  }
 
-.switch {
+  .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 40px;
-}
+  }
 
-.switch input {
+  .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-}
+  }
 
-.slider {
+  .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -183,11 +426,11 @@ button:hover {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 
-.slider:before {
+  .slider:before {
     position: absolute;
     content: "";
     height: 30px;
@@ -195,78 +438,70 @@ button:hover {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 
-input:checked+.slider {
+  input:checked + .slider {
     background-color: #000000;
-}
+  }
 
-input:checked+.slider:before {
+  input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-}
+  }
 
-@keyframes dark-on {
-
+  @keyframes dark-on {
     from {
-        opacity: 0%;
+      opacity: 0%;
     }
 
     to {
-        opacity: 100%;
+      opacity: 100%;
     }
-}
+  }
 
-.body-dark {
+  .body-dark {
     background-color: #221d1d;
+  }
 
-}
-
-.board-dark {
-    animation: dark-on 1s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  .board-dark {
+    word-wrap: break-word;
+    transition: ease-in-out;
+    animation: dark-on 1s ease;
     display: flex;
+    flex-direction: column;
+    background-size: 30%;
     background-image: url(./assets/9025617_flower_lotus_icon_white.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 20%;
-    justify-content: space-between;
     height: 80vh;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 2%;
-    gap: 2%;
+    margin: 1rem;
+    gap: 1rem;
+    padding-top: 10%;
     align-items: center;
-    min-width: 360px;
-}
+  }
 
-.apresentation-box-dark {
+  .apresentation-box-dark {
     animation: dark-on 1s ease-in-out;
     transition: all 0.5s ease-in-out;
-    color: whitesmoke;
     background-color: rgba(255, 255, 255, 0);
-    border: none;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 600px;
-    max-width: 500px;
+    width: 100%;
+    height: 50vh;
+  }
 
-}
-
-.login-box-dark {
+  .login-box-dark {
     animation: dark-on 1s ease-in-out;
     transition: all 1s ease-in-out;
     color: whitesmoke;
     background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1), 0px -8px 25px 10px rgba(150, 150, 150, 0.24);
+    box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1),
+      0px -8px 25px 10px rgba(150, 150, 150, 0.24);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -276,5 +511,6 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
     gap: 2em;
-    max-width: 500px;
+    
+  }
 }
