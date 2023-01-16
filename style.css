@@ -72,14 +72,13 @@ header {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 500px;
-  max-width: 600px;
+  height: 70vh;
+  width: 35rem;
+
   justify-content: center;
   align-items: center;
   gap: 2em;
-  margin-left: 50px;
-  margin-right: 50px;
+ 
 }
 
 .login-box div {
@@ -244,7 +243,7 @@ input:checked + .slider:before {
   align-items: center;
   height: 100%;
   width: 600px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .login-box-dark {
@@ -257,13 +256,12 @@ input:checked + .slider:before {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 500px;
-  max-width: 600px;
+  height: 70vh;
+  width: 35rem;
   justify-content: center;
   align-items: center;
   gap: 2em;
-  max-width: 500px;
+ 
 }
 
 @media only screen and (max-width: 768px) {
@@ -286,12 +284,6 @@ input:checked + .slider:before {
     gap: 1rem;
     padding-top: 10%;
     align-items: center;
-  }
-
-  .apresentation-box,
-  .login-box,
-  .apresentation-box h1 {
-    background-color: rgba(245, 245, 245, 0);
   }
 
   .apresentation-box {
@@ -326,6 +318,7 @@ input:checked + .slider:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: none;
     
   
   }
@@ -341,7 +334,9 @@ input:checked + .slider:before {
   input::placeholder {
     color: whitesmoke;
   }
-
+  button{
+    width: 20rem;
+  }
   input {
     animation: dark-on 1s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -356,28 +351,6 @@ input:checked + .slider:before {
     font-size: 18px;
     width: 20rem;
     height:3rem;
-  }
-
-  form,
-  form span,
-  form span a {
-    border-radius: 5px;
-    background-color: rgba(245, 245, 245, 0);
-  }
-
-  button {
-    width: 300px;
-    display: block;
-    color: whitesmoke;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(101, 101, 101);
-    margin: 10px 0 0 0;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 18px;
-    width: 20rem;
-    height:4rem;
   }
 
   input:hover,
@@ -452,21 +425,14 @@ input:checked + .slider:before {
     transform: translateX(26px);
   }
 
-  @keyframes dark-on {
-    from {
-      opacity: 0%;
-    }
-
-    to {
-      opacity: 100%;
-    }
-  }
 
   .body-dark {
     background-color: #221d1d;
+    
   }
 
   .board-dark {
+
     word-wrap: break-word;
     transition: ease-in-out;
     animation: dark-on 1s ease;
@@ -500,8 +466,6 @@ input:checked + .slider:before {
     transition: all 1s ease-in-out;
     color: whitesmoke;
     background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0px 3px 112px -15px rgba(150, 150, 150, 1),
-      0px -8px 25px 10px rgba(150, 150, 150, 0.24);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
